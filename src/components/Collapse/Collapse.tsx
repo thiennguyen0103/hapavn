@@ -2,12 +2,12 @@ import { FC, MouseEvent, ReactNode, useState } from "react";
 import { IconBase } from "react-icons";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { TAdminNavSidebar } from "../../@types/common";
 import { cn } from "../../lib/utils";
+import { TNavSidebar } from "../../@types/common";
 
 type TCollapseProps = {
   title: ReactNode;
-  items: TAdminNavSidebar[];
+  items: TNavSidebar[];
 };
 
 const Collapse: FC<TCollapseProps> = ({ items, title }) => {

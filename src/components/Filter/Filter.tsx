@@ -3,13 +3,11 @@ import { IoMdArrowDropdown, IoMdSearch } from "react-icons/io";
 import { MdFilterAlt } from "react-icons/md";
 
 type FilterProps = {
-  onSearch: (query: string) => void;
   onBrandChange: (brand: string) => void;
   onOtherFilters: () => void;
 };
 
 const Filter: React.FC<FilterProps> = ({
-  onSearch,
   onBrandChange,
   onOtherFilters,
 }) => {

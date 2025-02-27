@@ -5,10 +5,6 @@ import Filter from "../../components/Filter/Filter";
 import ProductTable from "../../components/Table/ProductTable";
 
 const AdminDashboard: FC = () => {
-  const handleSearch = (query: string) => {
-    console.log("Searching for:", query);
-  };
-
   const handleBrandChange = (brand: string) => {
     console.log("Selected Brand:", brand);
   };
@@ -18,11 +14,11 @@ const AdminDashboard: FC = () => {
   };
   const tabData = [
     {
+      id: "1",
       label: "Tất cả",
       content: (
         <div>
           <Filter
-            onSearch={handleSearch}
             onBrandChange={handleBrandChange}
             onOtherFilters={handleOtherFilters}
           />
